@@ -9,25 +9,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Based on Twenty Twenty-Five, which emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.
-
+tbd
 
 == Changelog ==
 
-= 1.1 =
-* Released: February 11, 2025
-
-https://wordpress.org/documentation/article/twenty-twenty-five-changelog/#Version_1.1
-
-= 1.0 =
-* Released: November 13, 2024
-
-https://wordpress.org/documentation/article/twenty-twenty-five-changelog/#Version_1.0
+tbd
 
 == Copyright ==
 
-Twenty Twenty-Five WordPress Theme, (C) 2024-2025 WordPress.org and contributors.
-Twenty Twenty-Five is distributed under the terms of the GNU GPL.
+Three N Three A WordPress Theme, (C) 2025 3n3a and contributors.
+Three N Three A is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -41,11 +32,21 @@ GNU General Public License for more details.
 
 This theme incorporates code from:
 
-Twenty Twenty-Four WordPress Theme, (C) 2023 WordPress.org
+Three N Three A WordPress Theme, (C) 2025 3n3a
 License: GPLv2 or later. License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 This theme bundles the following third-party resources:
+
+=== Themes ===
+
+Themes which were used as a base for this theme.
+
+Twenty Twenty-Five Wordpress Theme
+Copyright (c) 2024 Wordpress.org
+License: GPLv2 or later. License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Reference: https://github.com/WordPress/WordPress
+Source: https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentytwentyfive
 
 === Fonts ===
 .ttf files downloaded from fonts.google.com have been converted to .woff2 using
