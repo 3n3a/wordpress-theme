@@ -4,9 +4,8 @@
  * Slug: threenthreea/hidden-written-by
  * Inserter: no
  *
- * @package    WordPress
- * @subpackage Twenty_Twenty_Five
- * @since      Twenty Twenty-Five 1.0
+ * @package Three N Three A
+ * @since Three N Three A 1.0
  */
 
 ?>

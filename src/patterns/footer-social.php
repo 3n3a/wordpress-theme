@@ -32,7 +32,7 @@
 		printf(
 			/* translators: Designed with WordPress. %s: WordPress link. */
 			esc_html__( 'Designed with %s', 'threenthreea' ),
-			'<a href="' . esc_url( __( 'https://wordpress.org', 'threenthreea' ) ) . '" rel="nofollow">WordPress</a>'
+			'<a href="' . esc_url( __( 'https://github.com/3n3a/wordpress-theme', 'threenthreea' ) ) . '" rel="nofollow">3n3a</a>'
 		);
 		?>
 		</p>

@@ -59,3 +59,8 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 .more-link {
 	display: block;
 }
+
+:where(.wp-site-blocks) > * {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}

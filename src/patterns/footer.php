@@ -71,7 +71,7 @@
 		<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 		<div class="wp-block-group alignfull">
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><?php esc_html_e( 'Twenty Twenty-Five', 'threenthreea' ); ?></p>
+			<p class="has-small-font-size"><?php esc_html_e( 'Three N Three A', 'threenthreea' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size">
@@ -79,7 +79,7 @@
 				printf(
 					/* translators: Designed with WordPress. %s: WordPress link. */
 					esc_html__( 'Designed with %s', 'threenthreea' ),
-					'<a href="' . esc_url( __( 'https://wordpress.org', 'threenthreea' ) ) . '" rel="nofollow">WordPress</a>'
+					'<a href="' . esc_url( __( 'https://github.com/3n3a/wordpress-theme', 'threenthreea' ) ) . '" rel="nofollow">3n3a</a>'
 				);
 				?>
 			</p>
