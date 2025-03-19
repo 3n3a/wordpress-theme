@@ -211,6 +211,9 @@
 				}
 			},
 			"core/button": {
+				"border": {
+					"radius": "4px"
+				},
 				"variations": {
 					"outline": {
 						"border": {
