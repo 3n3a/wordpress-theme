@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '9f331bf77bf2a7bc7b90a6413a2a18a7a0793621',
+        'reference' => 'd8c7875fb41afacf183a388ef8e73808d9bf1890',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '9f331bf77bf2a7bc7b90a6413a2a18a7a0793621',
+            'reference' => 'd8c7875fb41afacf183a388ef8e73808d9bf1890',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -35,8 +35,8 @@
             'type' => 'phpcodesniffer-standard',
             'install_path' => __DIR__ . '/../phpcompatibility/php-compatibility',
             'aliases' => array(
-                0 => '10.x-dev',
-                1 => '9.3.5',
+                0 => '9.3.5',
+                1 => '10.x-dev',
             ),
             'dev_requirement' => true,
         ),

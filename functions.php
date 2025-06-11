@@ -84,7 +84,7 @@ add_action( 'after_setup_theme', function() {
      * Taxonomies
      *
      * See the instructions:
-     * https://github.com/digitoimistodude/air-frost#custom-taxonomies
+     * https://github.com/digitoimistodude/air-light#custom-taxonomies
      */
     'taxonomies' => [
       // 'Your_Taxonomy' => [ 'post', 'page' ],
@@ -94,7 +94,7 @@ add_action( 'after_setup_theme', function() {
      * Post types
      *
      * See the instructions:
-     * https://github.com/digitoimistodude/air-frost#custom-post-types
+     * https://github.com/digitoimistodude/air-light#custom-post-types
      */
     'post_types' => [
       // 'Your_Post_Type',
