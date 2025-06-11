@@ -10,7 +10,6 @@ const cssnano = require('cssnano');
 const calcFunction = require('postcss-calc');
 const colormin = require('postcss-colormin');
 const discardEmpty = require('postcss-discard-empty');
-const discardUnused = require('postcss-discard-unused');
 const mergeLonghand = require('postcss-merge-longhand');
 const mergeAdjacentRules = require('postcss-merge-rules');
 const minifyGradients = require('postcss-minify-gradients');
@@ -22,13 +21,10 @@ const size = require('gulp-size');
 const config = require('../config.js');
 
 function prodstyles() {
-  return src(config.styles.src)
-
-    // Compile first time to CSS to be able to parse CSS files
-    .pipe(sass(config.styles.opts.development))
+  return src(config.sass.src)
 
     // Compile SCSS synchronously
-    .pipe(sass.sync(config.styles.opts.production))
+    .pipe(sass.sync(config.sass.production))
 
     // Run PostCSS plugins
     .pipe(postcss([
@@ -50,7 +46,7 @@ function prodstyles() {
     .pipe(size(config.size))
 
     // Save the final version for production
-    .pipe(dest(config.styles.production));
+    .pipe(dest(config.sass.dest.production));
 }
 
 exports.prodstyles = prodstyles;

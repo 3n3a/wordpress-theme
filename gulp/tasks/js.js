@@ -34,7 +34,7 @@ function js(done) {
     .on('error', handleError())
     .pipe(dest(config.js.development));
 
-    done();
+  done();
 }
 
 exports.js = js;

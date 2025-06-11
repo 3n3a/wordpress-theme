@@ -1,3 +1,9 @@
+/**
+ * @Author: Roni Laukkarinen
+ * @Date:   2021-04-22 08:06:03
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2021-11-23 09:52:24
+ */
 // Dependencies
 const {
   watch,
@@ -21,11 +27,11 @@ function watchFiles(done) {
   }
 
   // Styles in development environment
-  const devstyles = watch(config.styles.watch.development, series('devstyles')).on('error', handleError());
+  const devstyles = watch(config.sass.watch.development, series('devstyles')).on('error', handleError());
   devstyles.on('change', function(path) { consoleInfo(path); });
 
   // Styles in production environment
-  const prodstyles = watch(config.styles.watch.production, series('prodstyles'));
+  const prodstyles = watch(config.sass.watch.production, series('prodstyles'));
   prodstyles.on('change', function(path) { consoleInfo(path); });
 
   // JavaScript
@@ -37,7 +43,7 @@ function watchFiles(done) {
   php.on('change', function(path) { consoleInfo(path); });
 
   // Lint styles
-  watch(config.styles.watch.development, series('lintstyles'));
+  watch(config.sass.watch.development, series('lintstyles'));
 
   // Finish task
   done();

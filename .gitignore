@@ -1,15 +1,9 @@
-vendor/
-templates/
-content/
-move_out.sh
-move_in.sh
-theme_tests.sh
-bower_components/
+gulp/tasks/.DS_Store
 node_modules/
-dandelion.yml
-sass/navigation/luxbar
-sass/navigation/_luxbar.scss
+bower_components/
+package-lock.json
 .DS_Store
-html
-w3cErrors/
-.vscode
+gulp/.DS_Store
+
+# Tests
+content

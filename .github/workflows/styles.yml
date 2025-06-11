@@ -24,7 +24,7 @@ jobs:
         run: |
           rm package.json
           # wget https://raw.githubusercontent.com/digitoimistodude/devpackages/master/package.json
-          # sed -i 's/PROJECTNAME/air-light/g' package.json
+          # sed -i 's/air-frost/air-light/g' package.json
           npm install --global
 
       - name: Install stylelint packages

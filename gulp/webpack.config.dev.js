@@ -1,4 +1,3 @@
-
 module.exports = {
   externals: {
     jquery: 'jQuery' // Available and loaded through WordPress.
@@ -12,12 +11,11 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: [
-            ['@babel/preset-env', {
-              modules: false,
-              useBuiltIns: 'usage',
-              corejs: 3,
+            ['airbnb', {
               targets: {
-                esmodules: true
+                chrome: 50,
+                ie: 11,
+                firefox: 45
               }
             }]
           ]

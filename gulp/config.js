@@ -1,6 +1,5 @@
-// Set theme dir
-const themeDir = './';
-const proxyUrl = 'https://airdev.test';
+const themeDir = 'wp-content/themes/air-frost/';
+const proxyUrl = 'https://air-frost.test';
 
 module.exports = {
   cssnano: {
@@ -22,11 +21,6 @@ module.exports = {
     showFiles: true,
     showTotal: false,
   },
-  rename: {
-    min: {
-      suffix: '.min'
-    }
-  },
   browsersync: {
     // Important! If src is wrong, styles will not inject to the browser
     src: [
@@ -41,52 +35,53 @@ module.exports = {
       browser: 'Google Chrome',
       open: false,
       notify: true,
-      // Generate with: mkdir -p /var/www/certs && cd /var/www/certs && mkcert localhost 192.168.x.xxx ::1
       https: {
-        key: "/var/www/certs/localhost-key.pem",
-        cert: "/var/www/certs/localhost.pem",
+        key: "~/.config/localhost-certs/localhost-key.pem",
+        cert: "~/.config/localhost-certs/localhost.pem",
       }
     },
   },
-  styles: {
+  stylelint: {
+    src: themeDir + 'sass/**/*.scss',
+    opts: {
+      fix: false,
+      reporters: [{
+        formatter: 'string',
+        console: true,
+        failAfterError: false,
+        debug: false
+      }]
+    },
+  },
+  sass: {
     src: themeDir + 'sass/*.scss',
-    development: themeDir + 'css/dev/',
-    production: themeDir + 'css/prod/',
+    dest: {
+      development: themeDir + 'css/dev/',
+      production: themeDir + 'css/prod/',
+    },
     watch: {
       development: themeDir + 'sass/**/*.scss',
       production: themeDir + 'css/dev/*.css',
     },
-    stylelint: {
-      src: themeDir + 'sass/**/*.scss',
-      opts: {
-        fix: false,
-        reporters: [{
-          formatter: 'string',
-          console: true,
-          failAfterError: false,
-          debug: false
-        }]
-      },
+    development: {
+      charset: true,
+      verbose: true,
+      bundleExec: false,
+      outputStyle: 'expanded',
+      debugInfo: true,
+      errLogToConsole: true,
+      includePaths: [themeDir + 'node_modules/'],
+      quietDeps: true,
     },
-    opts: {
-      development: {
-        verbose: true,
-        bundleExec: false,
-        outputStyle: 'expanded',
-        debugInfo: true,
-        errLogToConsole: true,
-        includePaths: [themeDir + 'node_modules/'],
-        quietDeps: true,
-      },
-      production: {
-        verbose: false,
-        bundleExec: false,
-        outputStyle: 'compressed',
-        debugInfo: false,
-        errLogToConsole: false,
-        includePaths: [themeDir + 'node_modules/'],
-        quietDeps: true,
-      }
+    production: {
+      charset: true,
+      verbose: false,
+      bundleExec: false,
+      outputStyle: 'compressed',
+      debugInfo: false,
+      errLogToConsole: false,
+      includePaths: [themeDir + 'node_modules/'],
+      quietDeps: true,
     }
   },
   js: {
@@ -98,6 +93,7 @@ module.exports = {
   php: {
     watch: [
       themeDir + '*.php',
+      themeDir + '*/**.php',
       themeDir + 'inc/**/*.php',
       themeDir + 'template-parts/**/*.php'
     ]

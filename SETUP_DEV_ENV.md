@@ -7,7 +7,7 @@
 1. Install CLI's
 
     ```bash
-    brew install php
+    brew install php mkcert
     ```
 
 2. Install `PHP_CodeSniffer`, etc.:
@@ -40,4 +40,14 @@
     ```bash
     stylelint -v
     eslint -v
+    ```
+
+## Setup 
+
+1. Generate localhost TLS-Certificates
+
+    ```bash
+    mkdir -p ~/.config/localhost-certs
+    cd ~/.config/localhost-certs
+    mkcert localhost $(hostname) $(ipconfig getifaddr en0) ::1
     ```
