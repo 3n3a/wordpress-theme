@@ -51,7 +51,7 @@ jobs:
       - name: Run gulp task devstyles in this project
         if:
         run: |
-          # wget https://raw.githubusercontent.com/digitoimistodude/air-light/master/package.json
+          # wget https://raw.githubusercontent.com/digitoimistodude//master/package.json
           npm install
 
           # Make the command visible
