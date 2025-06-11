@@ -5,7 +5,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 // Theme setup
 require get_theme_file_path( '/inc/includes/theme-setup.php' );

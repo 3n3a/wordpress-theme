@@ -6,7 +6,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 function single_comment( $comment, $args, $depth ) {
 ?>

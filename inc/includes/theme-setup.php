@@ -5,7 +5,7 @@
  * @package air-frost
  **/
 
-namespace Air_Light;
+namespace Air_Frost;
 
 function theme_setup() {
 

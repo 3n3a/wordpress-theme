@@ -8,7 +8,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 function air_edit_link() {
 

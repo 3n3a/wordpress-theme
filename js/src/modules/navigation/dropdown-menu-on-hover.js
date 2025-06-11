@@ -77,7 +77,7 @@ function dropdownMenuOnHover(items) {
 
             // Set aria-label to expand for all dropdown-toggle elements
             // eslint-disable-next-line camelcase, no-undef
-            dropdownToggle.setAttribute('aria-label', `${air_light_screenReaderText.expand_for} ${linkText}`);
+            dropdownToggle.setAttribute('aria-label', `${Air_Frost_screenReaderText.expand_for} ${linkText}`);
           }
         });
       }, hoverIntentTimeout);

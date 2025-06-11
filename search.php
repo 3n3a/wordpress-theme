@@ -11,7 +11,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 $results = [];
 

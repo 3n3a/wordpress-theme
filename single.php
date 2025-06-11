@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 the_post();
 get_header(); ?>

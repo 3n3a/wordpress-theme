@@ -13,7 +13,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
  /*
  * If the current post is protected by a password and

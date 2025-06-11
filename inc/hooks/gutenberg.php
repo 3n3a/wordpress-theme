@@ -5,7 +5,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 /**
  * Restrict blocks to only allowed blocks in the settings
@@ -50,7 +50,7 @@ function allowed_block_types( $allowed_blocks, $editor_context ) { // phpcs:igno
     });
 
     // Allow filtering core blocks with full block data
-    $core_blocks = apply_filters( 'air_light_allowed_core_blocks_obj', $core_blocks );
+    $core_blocks = apply_filters( 'Air_Frost_allowed_core_blocks_obj', $core_blocks );
 
     $core_blocks = array_map(function( $block ) {
       return $block->name;
@@ -60,7 +60,7 @@ function allowed_block_types( $allowed_blocks, $editor_context ) { // phpcs:igno
     $core_blocks = array_values( $core_blocks );
 
     // Allow filtering core blocks before merging allowed blocks
-    $core_blocks = apply_filters( 'air_light_allowed_core_blocks', $core_blocks );
+    $core_blocks = apply_filters( 'Air_Frost_allowed_core_blocks', $core_blocks );
 
     // Add blocks defined on top of core blocks
     if ( is_array( $core_blocks ) ) {

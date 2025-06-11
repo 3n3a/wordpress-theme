@@ -1,8 +1,8 @@
 export default function getLocalization(stringKey) {
-  if (typeof window.air_light_screenReaderText === 'undefined' || typeof window.air_light_screenReaderText[stringKey] === 'undefined') {
+  if (typeof window.Air_Frost_screenReaderText === 'undefined' || typeof window.Air_Frost_screenReaderText[stringKey] === 'undefined') {
     // eslint-disable-next-line no-console
     console.error(`Missing translation for ${stringKey}`);
     return '';
   }
-  return window.air_light_screenReaderText[stringKey];
+  return window.Air_Frost_screenReaderText[stringKey];
 }

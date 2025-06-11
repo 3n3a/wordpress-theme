@@ -5,7 +5,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 $description = get_bloginfo( 'description', 'display' );
 ?>

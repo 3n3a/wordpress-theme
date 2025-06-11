@@ -12,12 +12,12 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 /**
  * The current version of the theme.
  */
-define( 'AIR_LIGHT_VERSION', '9.5.0' );
+define( 'Air_Frost_VERSION', '9.5.0' );
 
 // We need to have some defaults as comments or empties so let's allow this:
 // phpcs:disable Squiz.Commenting.InlineComment.SpacingBefore, WordPress.Arrays.ArrayDeclarationSpacing.SpaceInEmptyArray
@@ -180,7 +180,7 @@ add_action( 'after_setup_theme', function() {
     'my_custom_setting' => true,
   ];
 
-  $theme_settings = apply_filters( 'air_light_theme_settings', $theme_settings );
+  $theme_settings = apply_filters( 'Air_Frost_theme_settings', $theme_settings );
 
   define( 'THEME_SETTINGS', $theme_settings );
 } ); // end action after_setup_theme

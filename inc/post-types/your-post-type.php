@@ -5,7 +5,7 @@
  * @package air-frost
  **/
 
-namespace Air_Light;
+namespace Air_Frost;
 
 /**
  * Registers the Your Post Type post type.

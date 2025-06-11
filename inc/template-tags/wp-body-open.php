@@ -5,7 +5,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 if ( ! function_exists( 'wp_body_open' ) ) {
 	/**

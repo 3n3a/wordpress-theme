@@ -14,7 +14,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 /**
  * A custom WordPress nav walker class, using the WordPress built in menu manager.

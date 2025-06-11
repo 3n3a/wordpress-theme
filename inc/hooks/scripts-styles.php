@@ -5,7 +5,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 /**
  * Move jQuery to footer
@@ -16,7 +16,7 @@ function move_jquery_into_footer( $wp_scripts ) {
     $wp_scripts->add_data( 'jquery-core',    'group', 1 );
     $wp_scripts->add_data( 'jquery-migrate', 'group', 1 );
   }
-} // end air_light_move_jquery_into_footer
+} // end Air_Frost_move_jquery_into_footer
 
 /**
  * Enqueue scripts and styles.
@@ -44,7 +44,7 @@ function enqueue_theme_scripts() {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_localize_script( 'scripts', 'air_light_screenReaderText', [
+  wp_localize_script( 'scripts', 'Air_Frost_screenReaderText', [
     'expand_for'      => get_default_localization( 'Open child menu for' ),
     'collapse_for'    => get_default_localization( 'Close child menu for' ),
     'expand_toggle'   => get_default_localization( 'Open main menu' ),
@@ -58,8 +58,8 @@ function enqueue_theme_scripts() {
   ] );
 
   // Add domains/hosts to disable external link indicators
-  wp_localize_script( 'scripts', 'air_light_externalLinkDomains', THEME_SETTINGS['external_link_domains_exclude'] );
-} // end air_light_scripts
+  wp_localize_script( 'scripts', 'Air_Frost_externalLinkDomains', THEME_SETTINGS['external_link_domains_exclude'] );
+} // end Air_Frost_scripts
 
 /**
  * Returns the built asset filename and path depending on

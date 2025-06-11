@@ -5,7 +5,7 @@
  * @package air-frost
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 function render_acf_block( $block, $content = '', $is_preview = false, $post_id = 0 ) {
   $block_slug = str_replace( 'acf/', '', $block['name'] );
@@ -32,8 +32,8 @@ function render_acf_block( $block, $content = '', $is_preview = false, $post_id 
   $cache_key    = "post_{$post_id}_{$block['id']}|{$content_hash}";
   $cache_key    = apply_filters( 'air_acf_block_cache_key', $cache_key, $block_slug, $post_id );
 
-  global $air_light_current_block;
-  $air_light_current_block = $block;
+  global $Air_Frost_current_block;
+  $Air_Frost_current_block = $block;
 
   // Get block contents
   if ( ! $block_cache_enabled ) {

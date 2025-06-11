@@ -15,7 +15,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace Air_Light;
+namespace Air_Frost;
 
 get_header(); ?>
 
