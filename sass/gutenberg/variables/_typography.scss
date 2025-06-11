@@ -1,11 +1,11 @@
 // Needed typography exceptions for Gutenberg
 
 // Variable fonts
-@include variablefont('Mona Sans', '../../../../../wp-content/themes/air-frost/fonts/monasansvf', 1 999);
+@include variablefont('Mona Sans', '../../../../../fonts/monasansvf', 1 999);
 
 // Regular fonts
-// @include font('Inter', '../../../../../wp-content/themes/air-frost/fonts/inter-400', 400);
-// @include font('Inter', '../../../../../wp-content/themes/air-frost/fonts/inter-400-italic', 400, italic);
-// @include font('Inter', '../../../../../wp-content/themes/air-frost/fonts/inter-500', 500);
-// @include font('Inter', '../../../../../wp-content/themes/air-frost/fonts/inter-600', 600);
-// @include font('Inter', '../../../../../wp-content/themes/air-frost/fonts/inter-700', 700);
+// @include font('Inter', '../../../../../fonts/inter-400', 400);
+// @include font('Inter', '../../../../../fonts/inter-400-italic', 400, italic);
+// @include font('Inter', '../../../../../fonts/inter-500', 500);
+// @include font('Inter', '../../../../../fonts/inter-600', 600);
+// @include font('Inter', '../../../../../fonts/inter-700', 700);

@@ -124,7 +124,7 @@
       true,
       {
         "importFrom": [
-          "wp-content/themes/air-frost/css/dev/global.css"
+          "css/dev/global.css"
         ]
       }
     ],

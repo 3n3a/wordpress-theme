@@ -1,8 +1,11 @@
 {
   "name": "air-frost",
   "version": "2.6.1",
-  "description": "air-frost powered by dudestack + devpackages",
-  "author": "Digitoimisto Dude Oy (moro@dude.fi)",
+  "description": "air-frost powered by air-light",
+  "author": "3n3a",
+  "scripts": {
+    "start": "gulp watch"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",

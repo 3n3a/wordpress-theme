@@ -1,5 +1,5 @@
-const themeDir = 'wp-content/themes/air-frost/';
-const proxyUrl = 'https://air-frost.test';
+const themeDir = './';
+const proxyUrl = 'http://localhost:8080';
 
 module.exports = {
   cssnano: {
@@ -36,8 +36,8 @@ module.exports = {
       open: false,
       notify: true,
       https: {
-        key: "~/.config/localhost-certs/localhost-key.pem",
-        cert: "~/.config/localhost-certs/localhost.pem",
+        key: "/var/www/certs/localhost+3-key.pem",
+        cert: "/var/www/certs/localhost+3.pem",
       }
     },
   },

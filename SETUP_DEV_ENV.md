@@ -47,7 +47,7 @@
 1. Generate localhost TLS-Certificates
 
     ```bash
-    mkdir -p ~/.config/localhost-certs
-    cd ~/.config/localhost-certs
-    mkcert localhost $(hostname) $(ipconfig getifaddr en0) ::1
+    sudo mkdir -p /var/www/certs/
+    cd /var/www/certs/
+    sudo mkcert localhost $(hostname) $(ipconfig getifaddr en0) ::1
     ```

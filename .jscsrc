@@ -6,12 +6,12 @@
   "disallowSpacesInAnonymousFunctionExpression": false,
   "fileExtensions": [".js"],
   "excludeFiles": [
-    "wp-content/themes/air-frost/js/dist/*.js",
-    "wp-content/themes/air-frost/js/src/legacy.js",
-    "wp-content/themes/air-frost/js/src/modules/lazyload.js",
-    "wp-content/themes/air-frost/js/src/modules/sticky-nav.js",
-    "wp-content/themes/air-frost/js/src/modules/navigation.js",
-    "wp-content/themes/air-frost/js/all.js",
+    "js/dist/*.js",
+    "js/src/legacy.js",
+    "js/src/modules/lazyload.js",
+    "js/src/modules/sticky-nav.js",
+    "js/src/modules/navigation.js",
+    "js/all.js",
     "gulpfile.js"
   ]
 }
