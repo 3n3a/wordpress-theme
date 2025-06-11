@@ -50,4 +50,7 @@
     sudo mkdir -p /var/www/certs/
     cd /var/www/certs/
     sudo mkcert localhost $(hostname) $(ipconfig getifaddr en0) ::1
+
+    # install in system root
+    sudo mkcert -install
     ```
