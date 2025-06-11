@@ -53,4 +53,11 @@
 
     # install in system root
     sudo mkcert -install
+
+    # serve root ca for other devices
+    python3 -m http.server -d "$(mkcert -CAROOT)"
+    # 1. ios open <http://url:8000> in safari
+    # 2. click on <rootCA.pem> and "allow"
+    # 3. go to settings and install
+    # 4. trust under General > About > Certificate Trust ...
     ```
