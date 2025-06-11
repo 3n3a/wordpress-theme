@@ -21,7 +21,7 @@ services:
     image: docker.io/library/wordpress:latest
     volumes:
       - wp_data:/var/www/html
-      - ./src/:/var/www/html/wp-content/themes/threenthreea/
+      - ./:/var/www/html/wp-content/themes/air-frost/
     ports:
       - 8080:80
     restart: always
