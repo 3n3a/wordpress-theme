@@ -41,7 +41,8 @@ add_action( 'after_setup_theme', function() {
      * Logo and featured image
      */
     'default_featured_image'  => null,
-    'logo'                    => '/svg/logo.svg',
+    'logo'                    => '/svg/orsana-green-main.png',
+    'logo-mobile'             => '/svg/orsana-white-icon.png',
 
     /**
      * Custom setting group settings when using Air setting groups plugin.
