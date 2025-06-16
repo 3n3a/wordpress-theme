@@ -28,3 +28,10 @@
     }
   }
 }
+
+.site-content {
+  padding-left: var(--spacing-site-content-padding-x);
+  padding-right: var(--spacing-site-content-padding-x);
+  padding-top: var(--spacing-site-content-padding-y);
+  padding-bottom: var(--spacing-site-content-padding-y);
+}
