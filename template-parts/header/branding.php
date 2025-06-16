@@ -15,7 +15,8 @@ $description = get_bloginfo( 'description', 'display' );
   <p class="site-title">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
       <span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span>
-      <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
+      <img class="site-logo site-logo-mobile" alt="logo" src="<?php echo THEME_SETTINGS['logo-mobile'] ?>">
+      <img class="site-logo" alt="logo" src="<?php echo THEME_SETTINGS['logo'] ?>">
     </a>
   </p>
 

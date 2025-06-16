@@ -15,7 +15,7 @@
 }
 
 .categories a {
-  background-color: var(--color-valhalla);
+  background-color: var(--color-primary);
   border-radius: 1.875rem;
   color: var(--color-white);
   display: inline-block;
@@ -27,7 +27,7 @@
 
 .categories a:hover,
 .categories a:focus {
-  background-color: var(--color-black);
+  background-color: var(--color-primary-dark);
   color: var(--color-white);
 }
 
@@ -56,8 +56,8 @@
 
   a:hover,
   a:focus {
-    background-color: var(--color-black);
-    border-color: var(--color-black);
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
     color: var(--color-white);
   }
 }

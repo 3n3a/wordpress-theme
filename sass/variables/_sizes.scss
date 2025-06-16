@@ -1,0 +1,45 @@
+:root {
+  /* Branding */
+  --size-logo-height: 3rem;
+
+  /* Navigation for Large Screens */
+
+  // Affecting to both main and sub-levels
+  --dropdown-toggle-size: 0.75rem;
+
+  // Main level items on desktop
+  --padding-main-level-horizontal: 0;
+  --padding-main-level-vertical: 0.375rem;
+  --gap-between-dropdown-toggle: 0.9375rem;
+  --gap-main-level-horizontal: 1.5625rem;
+
+  // Sub menu items on desktop
+  --padding-sub-menu-vertical: 0.375rem;
+  --padding-sub-menu-link-vertical: 0.3125rem;
+  --padding-sub-menu-link-horizontal: 0.9375rem;
+  --width-sub-menu: 12.5rem;
+  --gap-dropdown: 0.625rem;
+
+
+  /* Navigation for Mobile Screens */
+  
+  // Site-header and general mobile navigation elements
+  --width-navigation: min(27.5rem, 100vw);
+
+  // Main level items on mobile
+  --typography-size-main-level-mobile: 0.9375rem;
+  --typography-weight-main-level-mobile: 600;
+  --padding-main-level-vertical-mobile: 0.75rem;
+
+  // Sub-menu items on mobile
+  --typography-size-sub-menu-mobile: 0.9375rem;
+  --typography-weight-sub-menu-mobile: 600;
+  --margin-left-sub-menu: 0.625rem;
+  --padding-sub-menu-vertical-mobile: 0.5rem;
+  --padding-sub-menu-horizontal-mobile: 1.5625rem;
+
+
+  /* Hamburger */
+  --hamburger-layer-height: 2px;
+  --hamburger-width: 2rem;
+}

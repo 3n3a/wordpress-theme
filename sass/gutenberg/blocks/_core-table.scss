@@ -2,7 +2,7 @@
 // Table heading cells
 th {
   backface-visibility: hidden;
-  background-color: var(--color-scorpion);
+  background-color: var(--color-background-table-heading);
   color: var(--color-white);
   font-weight: var(--typography-weight-bold);
   overflow: hidden;
@@ -47,8 +47,6 @@ thead,
 
 // Defaults
 table {
-  --color-background-table-cell-odd: var(--color-white);
-  --color-background-table-cell-even: #f3f3f3;
   border-collapse: collapse;
   border-spacing: 0;
 }

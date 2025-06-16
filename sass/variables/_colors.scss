@@ -4,27 +4,145 @@
 // For AA: https://chir.ag/projects/name-that-color/
 // ------------------------------------------------------
 :root {
-  // Brand color pool
-  --color-black: #000;
+  /* Primary Color Scheme */
+  --color-primary: #586628;          /* Olive Green */
+  --color-primary-light: #7a8a3d;    /* Softer Olive */
+  --color-primary-dark: #3f4a1c;     /* Deep Olive */
 
-  --color-puce: #d88c9aff;
-  --color-light-orange: #f2d0a9ff;
-  --color-almond: #f1e3d3ff;
-  --color-cambridge-blue: #99c1b9ff;
-  --color-cambridge-blue-darker: rgb(120, 153, 146);
-  --color-tropical-indigo: #8e7dbeff;
-  --color-tropical-indigo-darker: rgb(98, 86, 131);
+  /* Secondary Colors */
+  --color-secondary: #a67449;        /* Earthy Brown */
+  --color-secondary-light: #c49a70;
+  --color-secondary-dark: #7c512f;
 
-  // Main element colors
-  --color-main: var(--color-puce);
-  --color-heading: var(--color-main);
+  /* Accent Colors */
+  --color-accent: #d9b44a;           /* Golden Yellow (Turmeric) */
+  --color-accent-light: #f1cc6e;
+  --color-accent-dark: #b38d27;
+
+  /* Neutrals */
+  --color-white: #fdfbf7;            /* Warm White */
+  --color-light: #f4f0e8;            /* Soft Beige */
+  --color-gray: #b0a99f;             /* Clay Gray */
+  --color-dark: #4e463b;             /* Earth Brown */
+  --color-black: #000;            /* Very Black */
+
+  /* Alerts & States */
+  --color-success: #7a9c3f;          /* Healing Green */
+  --color-warning: #e5a14a;          /* Mellow Orange */
+  --color-error: #b75d47;            /* Clay Red */
+  --color-info: #709ea2;             /* Herbal Blue */
+
+  /* Backgrounds */
+  --color-bg-body: var(--color-white);
+  --color-bg-section: var(--color-light);
+  --color-bg-highlight: #e7e2d6;           /* Parchment tone */
+
+  /* Text Colors */
+  --color-text-primary: var(--color-dark);
+  --color-text-secondary: #6f6a60;
+  --color-text-inverse: var(--color-white);
+
+  /* Main element colors */
+  --color-main: var(--color-primary);
+  --color-heading: var(--color-primary-dark);
   --color-paragraph: var(--color-black);
 
-  // Modern link
-  --color-link-text: var(--color-tropical-indigo);
-  --color-link-text-hover: var(--color-tropical-indigo-darker);
+  /* ******************************************************************* */
 
-  // Element states
-  --color-error: #cc2e2e;
-  --color-success: #21aa14;
+  /* Modern link */
+  --color-link-text: var(--color-primary);
+  --color-link-text-hover: var(--color-primary-dark);
+
+  /* Pagination Numbers */
+  --color-pagination-background: var(--color-dark);
+  --color-pagination-background-hover: var(--color-white);
+  --color-pagination-background-current: var(--color-accent-dark);
+  --color-pagination-text: var(--color-white);
+  --color-pagination-text-hover: var(--color-accent-dark);
+  --color-pagination-text-current: var(--color-white);
+  --color-pagination-border: var(--color-dark);
+  --color-pagination-border-hover: var(--color-accent-dark);
+  --color-pagination-border-current: var(--color-accent-dark);
+
+  /* Back to Top */
+  --color-background-top: #f5f5f5;
+  --color-background-top-hover: #f0f0f0;
+
+  /* Core Table */
+  --color-background-table-cell-odd: var(--color-white);
+  --color-background-table-cell-even: #f3f3f3;
+  --color-background-table-heading: var(--color-dark);
+
+  /* Block: Error */
+  --color-error-block-border: #adb2ad; // Color picked from ACF
+  --color-error-block-background: #f9f9f9; // Color picked from ACF
+
+  /* Edit Link */
+  --color-link-edit-background-hover: var(--color-gray);
+  --color-link-edit-border: var(--color-white);
+  --color-link-edit-text: color.adjust(var(--color-dark), -20%);
+  --color-link-edit-text-hover: var(--color-light);
+
+  /* Wordpress */
+  --color-border-sticky: #d7e4f2;
+  --color-bypostauthor: rgb(42 45 62 / .5);
+
+  /* Navigation for Large Screens */
+  --color-dropdown-toggle: var(--color-primary);
+  --color-current: var(--color-link-text);
+  --color-main-level: var(--color-black);
+  --color-hover-main-level: var(--color-link-text);
+  --color-sub-menu: var(--color-primary);
+  --color-hover-sub-menu: var(--color-primary);
+  --color-background-sub-menu: var(--color-white);
+
+  /* Navigation for Mobile Screens */
+  
+  // Site-header and general mobile navigation elements
+  --color-background-nav-mobile-header: var(--color-main);
+  --color-background-nav-mobile-header-active: var(--color-main);
+
+  // Affecting to both main and sub-levels
+  --color-background-menu-items: var(--color-main);
+  --color-background-menu-items-active: var(--color-main);
+  --color-separator-nav-mobile: rgb(255 255 255 / .1);
+  --color-current-menu-item: var(--color-white);
+  --color-dropdown-toggle-mobile: var(--color-white);
+
+  // Main level items on mobile
+  --color-main-level-menu-item-hover-focus-mobile: var(--color-white);
+  --color-main-level-menu-item-mobile: var(--color-white);
+
+  // Sub-menu items on mobile
+  --color-sub-menu-mobile: rgb(255 255 255 / .8);
+
+  /* Hamburger */
+  --hamburger-color: var(--color-white);
+  --hamburger-color-active: var(--color-white);
+
+  /* Comments */
+  --color-comment-text: var(--color-text-primary);
+  --color-comment-author-text: var(--color-text-primary);
+  --color-link-comment: var(--color-dark);
+  --color-link-comment-time-anchor: var(--color-accent-dark);
+
+  /* Form */
+  --color-background-input-field: var(--color-white);
+  --color-form-text: var(--color-paragraph);
+  --color-form-label-text: var(--color-form-text);
+  --color-required-label-text: var(--color-form-text);
+  --color-border-forms: var(--color-paragraph);
+  --color-border-forms-focus: var(--color-paragraph);
+  --color-button: var(--color-white);
+  --color-button-hover: var(--color-white);
+  --color-button-background: var(--color-secondary);
+  --color-button-background-hover: var(--color-secondary-dark);
+  --color-checkbox: var(--color-black);
+  --color-checkbox-outline: 0 0 0 3px rgb(84 87 115 / .2);
+  --color-checkbox-border-hover: color.adjust(#545773, 15%);
+  --color-checkbox-checked: var(--color-secondary);
+  --color-placeholder: var(--color-paragraph);
+  --color-placeholder-focus: var(--color-black);
+  --opacity-placeholder: .4;
+  --opacity-placeholder-focus: .8;
 }

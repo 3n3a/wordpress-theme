@@ -59,6 +59,13 @@
   --typography-weight-paragraph: var(--typography-weight-regular);
   --typography-weight-heading: var(--typography-weight-bold);
 
+  // Navigation for Large Screens
+  --typography-size-main-level: var(--typography-size-16);
+  --typography-weight-main-level: var(--typography-weight-bold);
+  --typography-size-sub-menu: var(--typography-size-16);
+  --typography-weight-sub-menu: var(--typography-weight-regular);
+
+
   // Heading font sizes in mobile
   @media (max-width: $container-mobile) {
     --typography-size-hero: 38px;

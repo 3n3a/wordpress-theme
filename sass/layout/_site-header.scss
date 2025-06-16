@@ -1,7 +1,7 @@
 // The very top of the site, element that usually includes
 // the site navigation and search for example.
 .site-header {
-  align-items: flex-start;
+  align-items: center;
   column-gap: var(--spacing-grid-gap);
   display: flex;
   justify-content: space-between;
@@ -25,5 +25,23 @@
   a {
     align-items: center;
     display: flex;
+  }
+}
+
+.site-logo {
+  height: var(--size-logo-height);
+}
+
+.site-logo-mobile {
+  display: none;
+}
+
+@media screen and (max-width: $width-max-mobile - 1px) {
+  .site-logo {
+    display: none;
+  }
+
+  .site-logo-mobile {
+    display: block;
   }
 }
